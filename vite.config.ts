@@ -1,0 +1,18 @@
+/// <reference types="vitest" />
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+/**
+ * Vite project configuration file.
+ * Sets up React compiler plugin and Vitest environment options.
+ */
+export default defineConfig({
+  base: './',
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.ts',
+    css: false,
+  },
+});
