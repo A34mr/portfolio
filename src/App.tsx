@@ -22,7 +22,7 @@ import { portfolioData } from './data/portfolioData';
 export const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans transition-colors duration-300">
+      <div className="min-h-screen bg-[hsl(var(--background))] text-[hsl(var(--foreground))] font-sans transition-colors duration-300">
         <Navbar name={portfolioData.personalInfo.name} />
         <main>
           <Hero personalInfo={portfolioData.personalInfo} />
