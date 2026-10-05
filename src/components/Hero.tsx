@@ -20,7 +20,7 @@ export const Hero: React.FC<HeroProps> = ({ personalInfo }) => {
         <div className="grid max-w-5xl gap-10 lg:grid-cols-[1.15fr_.85fr] lg:items-end">
           <div>
             <span className="sr-only">{personalInfo.name}</span>
-            <img src={personalInfo.profileImage} alt={`${personalInfo.name} profile`} className="sr-only" />
+            <img src={personalInfo.avatarUrl} alt={`${personalInfo.name} profile`} className="sr-only" />
             <span className="sr-only">Junior Software Developer</span>
             <p className="mb-7 font-mono text-xs uppercase tracking-[.25em] text-[#ff806d]">Junior software developer / Cairo</p>
             <h1 className="max-w-4xl text-[clamp(3.75rem,10vw,9rem)] font-semibold leading-[.86] tracking-[-.08em] text-white">
